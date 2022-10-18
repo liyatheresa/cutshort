@@ -1,9 +1,20 @@
+import WelcomePage from "./Components/WelcomePage";
+import WorkDetails from "./Components/WorkDetails";
+import Usage from "./Components/Usage";
+import Finish from "./Components/Finish";
+import MultiStep from "react-multistep";
 import "./App.css";
 
 function App() {
+  const steps = [
+    { name: "StepOne", component: <WelcomePage /> },
+    { name: "StepTwo", component: <WorkDetails /> },
+    { name: "StepThree", component: <Usage /> },
+    { name: "StepFour", component: <Finish /> },
+  ];
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <MultiStep activeStep={0} showNavigation={true} steps={steps} />
     </div>
   );
 }
