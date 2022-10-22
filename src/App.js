@@ -3,6 +3,7 @@ import WorkDetails from "./Components/WorkDetails";
 import Usage from "./Components/Usage";
 import Finish from "./Components/Finish";
 import MultiStep from "react-multistep";
+import "antd/dist/antd.min.css";
 import "./App.css";
 
 function App() {
@@ -14,7 +15,12 @@ function App() {
   ];
   return (
     <div className="App">
-      <MultiStep activeStep={0} showNavigation={true} steps={steps} />
+      <MultiStep
+        activeStep={0}
+        showNavigation={true}
+        prevStyle={{ display: "none" }}
+        steps={steps}
+      />
     </div>
   );
 }

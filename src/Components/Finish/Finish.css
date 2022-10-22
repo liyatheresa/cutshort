@@ -1,0 +1,29 @@
+.finish-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.finish-button {
+  margin-top: 2rem;
+  min-height: 2.5rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #664de5;
+  color: #fff;
+  min-width: 100%;
+}
+.finish-page .anticon svg {
+  height: 1rem;
+  width: 1rem;
+  position: relative;
+  left: 1rem;
+  top: 1rem;
+}
+.tick-icon {
+  min-width: 3rem;
+  min-height: 3rem;
+  border-radius: 1.5rem;
+  background-color: #664de5;
+  margin-block: 2.5rem;
+}

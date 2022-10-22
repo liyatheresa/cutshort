@@ -1,10 +1,7 @@
 import React from "react";
 import "./WelcomePage.css";
 
-const WelcomePage = ({ setIsWelcomePageButtonClicked }) => {
-  const buttonClicked = () => {
-    setIsWelcomePageButtonClicked(true);
-  };
+const WelcomePage = () => {
   return (
     <div className="page-one">
       <div className="titles">
@@ -16,7 +13,6 @@ const WelcomePage = ({ setIsWelcomePageButtonClicked }) => {
         <input type="text" placeholder="Steve Jobs"></input>
         <label>Display Name</label>
         <input type="text" placeholder="Steve"></input>
-        <button onClick={buttonClicked}>Create Workspace</button>
       </form>
     </div>
   );

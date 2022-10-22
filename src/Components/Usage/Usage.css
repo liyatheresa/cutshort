@@ -1,0 +1,38 @@
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+.buttons > button {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #777;
+  background-color: #fff;
+  border-radius: 5px;
+  min-height: 10rem;
+  min-width: 6rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.buttons > button:first-child {
+  margin-right: 1rem;
+}
+.buttons > button > span {
+  text-align: left;
+}
+.main-description {
+  font-weight: bold;
+}
+.buttons > button:focus,
+.buttons > button:hover {
+  outline: 1px solid #664de5;
+}
+.usage-button {
+  min-height: 2.5rem;
+  min-width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  border: none;
+  background-color: #664de5;
+  color: #fff;
+}
