@@ -70,23 +70,23 @@
 }
 .go433304200:before,
 .go3842760039:before {
-  min-width: 1.3rem;
-  min-height: 1.3rem;
-  border-radius: 0.8rem;
-  background-color: #664de5;
+  min-width: 1.3rem !important;
+  min-height: 1.3rem !important;
+  border-radius: 0.8rem !important;
+  background-color: #664de5 !important;
 }
 .go2335061104:before {
-  min-width: 1.3rem;
-  min-height: 1.3rem;
-  border-radius: 0.8rem;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  min-width: 1.3rem !important;
+  min-height: 1.3rem !important;
+  border-radius: 0.8rem !important;
+  background-color: #fff !important;
+  border: 1px solid #ccc !important;
 }
 .go2335061104:before,
 .go3842760039:before,
 .go433304200:before {
-  content: counter(count);
-  counter-increment: count;
+  content: counter(count) !important;
+  counter-increment: count !important;
 }
 #root div div:nth-child(2) ol li span {
   visibility: hidden;
