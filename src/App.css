@@ -11,6 +11,12 @@
   max-width: 50%;
   margin: auto;
 }
+.heading {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 .App ol {
   display: flex;
   justify-content: center;
@@ -38,19 +44,19 @@
   color: #fff;
   cursor: pointer;
 }
-.App div:first-child ol li:first-child {
+#root > div > div:nth-child(2) > ol > li:first-child {
   background-image: linear-gradient(#ccc, #ccc);
   background-size: 50% 2px;
   background-position: bottom right;
   background-repeat: no-repeat;
 }
-.App div:first-child ol li:last-child {
+#root > div > div:nth-child(2) > ol > li:last-child {
   background-image: linear-gradient(#ccc, #ccc);
   background-size: 50% 2px;
   background-position: bottom left;
   background-repeat: no-repeat;
 }
-.App div:first-child ol li {
+#root > div > div:nth-child(2) > ol > li {
   background-image: linear-gradient(#ccc, #ccc);
   background-size: 50% 2px;
   background-position: bottom left;
@@ -58,8 +64,8 @@
   margin: 0;
   border: none;
 }
-.App div:first-child ol li.go433304200,
-.App div:first-child ol li.go3842760039 {
+#root div div:nth-child(2) ol li.go433304200,
+#root div div:nth-child(2) ol li.go3842760039 {
   background-image: linear-gradient(#664de5, #664de5);
 }
 .go433304200:before,
@@ -82,6 +88,6 @@
   content: counter(count);
   counter-increment: count;
 }
-.App div:first-child ol li span {
+#root div div:nth-child(2) ol li span {
   visibility: hidden;
 }

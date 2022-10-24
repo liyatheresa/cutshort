@@ -15,6 +15,10 @@ function App() {
   ];
   return (
     <div className="App">
+      <div className="heading">
+        <img src={require("./eden.png")} alt="logo"></img>
+        <h2>Eden</h2>
+      </div>
       <MultiStep
         activeStep={0}
         showNavigation={true}
